@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Project Website for the ICLR 2025 paper GenARM: Reward Guided Generation with Autoregressive Reward Model for Test-Time Alignment">
+  <meta property="og:title" content="GenARM: Reward Guided Generation with Autoregressive Reward Model for Test-Time Alignment"/>
+  <meta property="og:description" content="We develop GenARM, which uses an autoregressive reward model to efficiently guide a base LLM for test-time alignment."/>
+  <meta property="og:url" content="https://genarm.github.io/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="main_page.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/> 
+
+
+  <meta name="twitter:title" content="Reward Guided Generation with Autoregressive Reward Model for Test-Time Alignment">
+  <meta name="twitter:description" content="We develop GenARM, which uses an autoregressive reward model to efficiently guide a base LLM for test-time alignment.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="main_page.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Language model alignment; test-time alignment; Large language models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>GenARM</title>
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?"> -->
+  <link rel="shortcut icon" type="image/png" href="trophy.png?">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><em>GenARM</em> : Reward Guided Generation with Autoregressive Reward Model for Test-Time Alignment</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yuancheng-xu.github.io" target="_blank">Yuancheng Xu</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="https://udarimadhu.github.io" target="_blank">Udari Madhushani Sehwag</a><sup>2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://koppel.netlify.app" target="_blank">Alec Koppel</a><sup>2</sup>,</span>
+                </span>
+                <span class="author-block">
+                  <a href="https://schzhu.github.io" target="_blank">Sicheng Zhu</a><sup>1</sup>,</span>
+                </span>
+                <span class="author-block">
+                  <a href="https://bangann.github.io" target="_blank">Bang An</a><sup>1</sup></span>
+                </span>
+                <br>
+                <span class="author-block">
+                  <a href="https://furong-huang.com" target="_blank">Furong Huang</a><sup>1</sup>,</span>
+                </span>
+                <span class="author-block">
+                  <a href="https://www.jpmorgan.com/technology/artificial-intelligence/about/sumitra-ganesh" target="_blank">Sumitra Ganesh</a><sup>2</sup></span>
+                </span>
+                  
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                      <sup>1</sup>University of Maryland, College Park&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>JPMorgan AI Research<br>
+                      <br>ICLR, 2025</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2410.08193" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/Yuancheng-Xu/GenARM" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span> -->
+
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/main.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <b>(Next-token generation guided by different RMs)</b> Using a trajectory-level RM to select the next token (top) requires the costly process of generating full responses for each candidate. 
+            In contrast, GenARM (bottom) efficiently samples the next token by combining scores from the base LLM and our proposed Autoregressive Reward Model, 
+            which is trained to predict next-token rewards directly.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">       -->
+      <!-- First Image with adjusted size and centered -->
+      <!-- <div style="margin-bottom: 0px; text-align: center;"> Adjust the margin as needed -->
+        <!-- <img src="static/images/Demo.png" alt="Description of First Image" style="width: 900px; display: block; margin: auto;"/> Adjust width as needed -->
+        <!-- Caption with constrained width -->
+        <!-- <div style="max-width: 850px; margin: auto;"> Adjust max-width as needed -->
+          <!-- <h2 class="subtitle has-text-centered"> -->
+            <!-- <b>(Next-token generation guided by different RMs)</b> Using a trajectory-level RM to select the next token (top) requires the costly process of generating full responses for each candidate. 
+            In contrast, GenARM (bottom) efficiently samples the next token by combining scores from the base LLM and our proposed Autoregressive Reward Model, 
+            which is trained to predict next-token rewards directly.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large Language Models (LLMs) exhibit impressive capabilities but require careful alignment with human preferences. 
+            Traditional training-time methods finetune LLMs using human preference datasets but incur significant training costs and require repeated 
+            training to handle diverse user preferences. Test-time alignment methods address this by using reward models (RMs) to guide frozen LLMs without retraining. 
+            However, existing test-time approaches rely on trajectory-level RMs which are designed to evaluate complete responses, making them unsuitable for autoregressive 
+            text generation that requires computing next-token rewards from partial responses. To address this, we introduce <em>GenARM</em>, a test-time alignment 
+            approach that leverages the <b>Autoregressive Reward Model</b>--a novel reward parametrization designed to predict next-token rewards 
+            for <b>efficient and effective</b> autoregressive generation. Theoretically, we demonstrate that this parametrization can provably guide frozen LLMs toward any distribution 
+            achievable by traditional RMs within the KL-regularized reinforcement learning framework. Experimental results show that GenARM significantly outperforms prior test-time 
+            alignment baselines and matches the performance of training-time methods. Additionally, GenARM enables efficient <b>weak-to-strong guidance</b>, aligning larger LLMs with 
+            smaller RMs without the high costs of training larger models. Furthermore, GenARM supports <b>multi-objective alignment</b>, allowing real-time trade-offs between preference 
+            dimensions and catering to diverse user preferences without retraining.
+            <br><br>
+            <b>TL;DR:</b> <em>GenARM</em> uses an autoregressive reward model to efficiently guide a base LLM for test-time alignment, outperforming prior methods and enabling weak-to-strong guidance and multi-objective alignment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">      
+      <h2 class="title is-3">Why do we need Autoregressive Reward Model?</h2>
+      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <p>❌ Traditional reward models = Slow 🚶
+        <br><br>
+        🔹They score entire responses post-generation 📜
+        <br><br>
+        🔹LLMs must generate fully before evaluation ⏳
+        <br><br>
+        ✅ GenARM = Fast 🏎️    
+        <br><br>
+        🔹 Predicts next-token rewards on the fly ⚡
+        <br><br>
+        🔹 Guides LLMs token by token—drastically improving efficiency! 💡
+        </p>
+      </div>    
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">      
+      <h2 class="title is-3">What’s an Autoregressive Reward Model?</h2>
+      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <p>Unlike conventional trajectory-level reward models, GenARM parametrizes rewards at the token level:
+          <br><br>
+          🔹 Rewards decompose naturally as log probabilities 🔄
+          <br><br>
+          🔹 Each token selection is guided dynamically 🎯
+          <br><br>
+        </p>
+        <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
+          <img src="static/images/reward_decompose.jpeg" alt="Autoregressive RM" style="width: 800px; display: block; margin: auto;"/> <!-- Adjust width as needed -->
+          <!-- Caption with constrained width -->
+          <div style="max-width: 750px; margin: auto;"> <!-- Adjust max-width as needed -->
+            <h2 class="subtitle has-text-centered">
+              Parametrization of the Autoregressive Reward Model.
+            </h2>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">      
+      <h2 class="title is-3">How Does GenARM Work?</h2>
+      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <p>Training Phase:
+          <br><br>
+          ✅ Learns next-token rewards from trajectory-level preference data 📊 
+          <br><br>
+          ✅ Ensures that preferred responses accumulate higher total rewards 💯
+          <br><br>
+        </p>
+        <p>
+          🚀 Inference Phase:
+          <br><br>
+          ✅ Combines LLM logits + next-token rewards to dynamically guide generation 🔄
+          <br><br>
+          💡 No model retraining. Just plug, play, and align!
+        </p>
+        <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
+          <img src="static/images/train_test_phase.jpeg" alt="Train and test phase" style="width: 800px; display: block; margin: auto;"/> <!-- Adjust width as needed -->
+          <!-- Caption with constrained width -->
+          <div style="max-width: 750px; margin: auto;"> <!-- Adjust max-width as needed -->
+            <h2 class="subtitle has-text-centered">
+              
+            </h2>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">      
+      <h2 class="title is-3">How Well Does it Perform?</h2>
+      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <p>
+          <br><br>
+          🔥 Fastest test-time alignment method—significantly outperforms baselines! 
+          <br><br>
+          🔥 Achieves 90% of fine-tuned performance—without retraining! 
+          <br><br>
+          🔥 Weak-to-strong guidance: Uses a 7B RM to align a 70B LLM, saving HUGE compute costs!
+          <br><br>
+          💡 More power, less compute! 🏆
+        </p>
+
+        <br><br>
+        
+        <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
+          <img src="static/images/general_fig.png" alt="Train and test phase" style="width: 800px; display: block; margin: auto;"/> <!-- Adjust width as needed -->
+          <!-- Caption with constrained width -->
+          <div style="max-width: 750px; margin: auto;"> <!-- Adjust max-width as needed -->
+            <h2 class="subtitle has-text-centered">
+            
+            </h2>
+          </div>
+        </div>
+
+        <br><br>
+
+        <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
+          <img src="static/images/general_result.png" alt="Train and test phase" style="width: 800px; display: block; margin: auto;"/> <!-- Adjust width as needed -->
+          <!-- Caption with constrained width -->
+          <div style="max-width: 750px; margin: auto;"> <!-- Adjust max-width as needed -->
+            <h2 class="subtitle has-text-centered">
+            
+            </h2>
+          </div>
+        </div>
+
+        <br><br><br><br><br><br>
+
+        <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
+          <img src="static/images/w2s_fig.png" alt="Train and test phase" style="width: 800px; display: block; margin: auto;"/> <!-- Adjust width as needed -->
+          <!-- Caption with constrained width -->
+          <div style="max-width: 750px; margin: auto;"> <!-- Adjust max-width as needed -->
+            <h2 class="subtitle has-text-centered">
+            
+            </h2>
+          </div>
+        </div>
+
+        <br><br>
+
+        <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
+          <img src="static/images/w2s_result.png" alt="Train and test phase" style="width: 800px; display: block; margin: auto;"/> <!-- Adjust width as needed -->
+          <!-- Caption with constrained width -->
+          <div style="max-width: 750px; margin: auto;"> <!-- Adjust max-width as needed -->
+            <h2 class="subtitle has-text-centered">
+            
+            </h2>
+          </div>
+        </div>
+
+        <br><br><br><br><br><br>
+
+        <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
+          <img src="static/images/multiobj_fig.png" alt="Train and test phase" style="width: 800px; display: block; margin: auto;"/> <!-- Adjust width as needed -->
+          <!-- Caption with constrained width -->
+          <div style="max-width: 750px; margin: auto;"> <!-- Adjust max-width as needed -->
+            <h2 class="subtitle has-text-centered">
+            
+            </h2>
+          </div>
+        </div>
+
+        <br><br>
+
+        <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
+          <img src="static/images/multiobj_result.png" alt="Train and test phase" style="width: 800px; display: block; margin: auto;"/> <!-- Adjust width as needed -->
+          <!-- Caption with constrained width -->
+          <div style="max-width: 750px; margin: auto;"> <!-- Adjust max-width as needed -->
+            <h2 class="subtitle has-text-centered">
+            
+            </h2>
+          </div>
+        </div>
+
+        
+      </div>    
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{
+        xu2025genarm,
+        title={GenARM: Reward Guided Generation with Autoregressive Reward Model for Test-Time Alignment},
+        author={Xu, Yuancheng and Sehwag, Udari Madhushani and Koppel, Alec and Zhu, Sicheng and An, Bang and Huang, Furong and Ganesh, Sumitra},
+        booktitle={The Thirteenth International Conference on Learning Representations},
+        year={2025},
+        }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
